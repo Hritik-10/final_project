@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierer</title>
+    <script>
+
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        header{
+            
+            background-color: black;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+        }
+        #main{
+            margin: 30px;
+            text-align: center;
+            background-color: aliceblue;
+            
+        }
+        #main label{
+            padding: 20px;
+            font-size: 20px;
+        }
+        #main select,button{
+            
+            font-size: 16px;
+            
+        }
+        #main button{
+            border-radius: 5px;
+            margin-left: 40px;
+            border: 2px solid rgb(90, 89, 89);
+            background-color: rgb(248, 92, 25);
+        }
+        #main button:hover{
+            background-color: rgb(233, 166, 80);
+            cursor: pointer;
+
+        }
+        img{
+            height: 90px;
+        }
+        ul{
+            display: flex;
+            border: 2px solid black;
+            border-radius: 25px;
+            background-image: linear-gradient(45deg, rgb(240, 171, 171),rgb(224, 195, 51));
+
+        }
+        ul div{
+            margin: auto;
+        }
+        #recomm{
+            /* height: 75vh; */
+            min-height: 80vh;
+            text-align: center;
+            color: brown;
+            border: 2px solid red;
+            background-image:linear-gradient(45deg,rgb(68, 194, 68),rgb(149, 225, 247))
+;
+        }
+        #title{
+            text-align: center;
+        }
+        .feed{
+            margin: auto;
+            /* border: 2px solid black; */
+            width: 50em;
+        }
+        .lis{
+            border: 2px solid blueviolet;
+            height: 140px;
+            width: 700px;
+            margin: 20px;
+            border-radius: 10px; 
+            
+        }
+        #user{
+            height: 35px;
+            padding: 5px 17px;
+            float: right;
+        }
+        #noti{
+            height: 35px;
+            padding-top: 5px;
+            padding-right: 18px;
+            float: right;
+        }
+        #logo{
+            height: 45px;
+            padding: 3px;
+            padding-left: 30px;
+        }
+        #myjobs{
+            float: right;
+            cursor: pointer;
+            height: 45px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            margin: 2px;
+        }
+        #myjobs:hover{
+            background-color: brown;
+            color: aliceblue;
+            border: 2px solid rgb(234, 231, 236);
+        }
+        
+
+        .b{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .btn{
+            float: right;
+            border-radius: 5px;
+            border: 2px solid red;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <img src="logo" alt=" !found"> -->
+           <!-- <h3>Workify</h3> -->
+           <button id="myjobs" onclick="myjobs">My Jobs</button>
+           <img id="logo" src="workify.jpg" alt="img not found">
+<label id="workify">Workify</label>        <img id="noti" src="notification.png" alt="not found">
+        <img id="user" src="user.png" alt="not found">
+    </header>
+    <section id="main">
+        <label >select category: </label>
+        <select name="occup" id="status">
+            <option value="">--</option>
+            <option value="plumber">plumber</option>
+            <option value="electrician">electrician</option>
+            <option value="geyser service">geyser service</option>
+        </select>
+
+        <label for="status">select Gender: </label>
+        <select name="gender" id="status">
+            <option value="any">any</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            
+        </select>
+
+        <button id="search">search</button>
+    </section>
+
+    <section id="recomm">
+        
+    <h1>Found 3 results..</h1>
+    <div class="feed">
+        <!-- multiple based on db -->
+        <!-- 1 -->
+        <ul>
+            <div class="a">
+                <img src="person.png" alt="pic">
+            </div>
+
+            <div class="b">
+                <h2>Name: Hritik Bansode</h2>
+                <h3>expert domain: plumber</h3>
+                <h3>rating: 4.5 stars</h3>
+            </div>
+
+            <div class="c">
+                <button class="btn">hire</button>
+            </div>
+        </ul>
+        <hr>
+        <!-- 2 -->
+        <ul>
+            <div class="a">
+                <img src="person.png" alt="pic">
+            </div>
+
+            <div class="b">
+                <h2>Name: Shreyash Tambe</h2>
+                <h3>expert domain: electrician</h3>
+                <h3>rating: 4.5 stars</h3>
+            </div>
+
+            <div class="c">
+                <button class="btn">hire</button>
+            </div>
+        </ul>
+        <hr>
+        <ul>
+            ..
+            <br>
+            ..
+        </ul>
+           
+    </div>
+    </section>
+    
+</body>
+</html>
